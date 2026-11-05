@@ -1,0 +1,2 @@
+# database
+Baza danych to uporządkowany system przechowywania, zarządzania i szybkiego wyszukiwania informacji niezbędnych do działania aplikacji. Pozwala ona na trwałe zapisywanie danych, takich jak profile użytkowników, zamówienia czy treści, zapewniając do nich bezpieczny i kontrolowany dostęp. Najpopularniejsze jej rodzaje to relacyjne (np. PostgreSQL, MySQL) oraz nierelacyjne, czyli NoSQL (np. MongoDB, Redis).
