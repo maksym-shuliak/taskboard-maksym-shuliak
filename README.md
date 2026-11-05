@@ -1,46 +1,42 @@
 # TaskBoard
- 
-## Opis
- 
-TaskBoard to aplikacja do zarządzania zadaniami.
-Umożliwia tworzenie, edytowanie i organizowanie zadań.
-Pomaga użytkownikom planować codzienną pracę.
- 
+
+TaskBoard to aplikacja internetowa służąca do zarządzania zadaniami. Umożliwia dodawanie, przeglądanie i organizowanie zadań w jednym miejscu.
+
 ## Technologie
- 
-- HTML
-- CSS
-- JavaScript
-- PHP
-- MySQL
- 
+
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** PHP
+- **Baza danych:** MySQL
+- **Narzędzia:** Visual Studio Code, Git, GitHub, XAMPP
+
 ## Wymagane środowisko
- 
+
+- Windows 11
 - Visual Studio Code
 - Git
-- Przeglądarka intenetowa
 - XAMPP
- 
+- Przeglądarka internetowa
+
 ## Uruchomienie
- 
-Projekt jest obecnie w fazie przygotowania.
-Instrukcja uruchomienia zostanie uzupełniona w kolejnych etapach.
- 
+
+1. Sklonuj repozytorium na komputer.
+2. Umieść folder projektu w katalogu htdocs programu XAMPP.
+3. Uruchom Apache i MySQL w XAMPP.
+4. Otwórz projekt w przeglądarce internetowej.
+
 ## Struktura projektu
- 
+
 | Folder | Za co odpowiada |
 | --- | --- |
-| `frontend/` | Interfejs użytkownika |
-| `backend/` | Logika aplikacji |
-| `database/` | Baza danych |
-| `docs/` | Dokumentacja projektu |
-| `docs/zadania/` | dokumentacja i opis zadan |
- 
+| frontend/ | Zawiera pliki odpowiedzialne za wygląd i interfejs użytkownika. |
+| backend/ | Zawiera kod odpowiedzialny za działanie aplikacji. |
+| database/ | Zawiera pliki i strukturę bazy danych. |
+| docs/ | Zawiera dokumentację projektu i zadania. |
+
 ## Materiały
- 
+
 Pliki potrzebne podczas praktyk są w folderze [materialy](materialy/README.md).
 
- 
 ## Autor
- 
-Maksym Shuliak, 3TP.
+
+Maksym Shuliak 3TP
