@@ -1,1 +1,7 @@
-Backend to niewidoczna dla użytkownika część aplikacji internetowej, która odpowiada za logikę biznesową, przetwarzanie danych oraz zarządzanie bazą danych. Działa on po stronie serwera, odbierając i obsługując żądania przesyłane z front-endu oraz dbając o bezpieczeństwo całego systemu. Do najpopularniejszych technologii wykorzystywanych w backendzie należą m.in. Node.js, Python, Java, PHP czy różnego rodzaju bazy danych (np. PostgreSQL, MongoDB).n
+# Backend
+ 
+Folder backend zawiera logikę serwerową aplikacji TaskBoard.
+ 
+Odpowiada za obsługę żądań użytkowników i przetwarzanie danych.
+ 
+Backend komunikuje się z bazą danych.

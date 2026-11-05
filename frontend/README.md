@@ -1,1 +1,7 @@
-Front-end to warstwa wizualna i interaktywna każdej strony lub aplikacji internetowej, z którą użytkownik ma bezpośredni kontakt w przeglądarce. Powstaje on głównie przy użyciu języków HTML, CSS oraz JavaScript, często w połączeniu z nowoczesnymi frameworkami, takimi jak React czy Vue. Jego głównym zadaniem jest zapewnienie intuicyjnej, płynnej nawigacji oraz atrakcyjnego doświadczenia użytkownika.n
+# Frontend
+ 
+Folder frontend zawiera interfejs użytkownika aplikacji TaskBoard.
+ 
+Tutaj znajdują się pliki odpowiedzialne za wygląd aplikacji.
+ 
+Użytkownik może tutaj przeglądać i zarządzać zadaniami.

@@ -1,1 +1,7 @@
-Folder docs to dedykowane miejsce w strukturze projektu służące do gromadzenia całej dokumentacji technicznej, instrukcji wdrożeniowych oraz specyfikacji. Ułatwia on nowym członkom zespołu szybkie zrozumienie systemu, a także stanowi centralne źródło aktualnej wiedzy na temat działania i architektury aplikacji. Najczęściej zawiera pliki tekstowe (np. w formacie Markdown), schematy układu oraz opisy interfejsów API.n
+# Dokumentacja
+ 
+Folder docs zawiera dokumentację projektu TaskBoard.
+ 
+Znajdują się tutaj opisy działania aplikacji i jej struktury.
+ 
+Dokumentacja pomaga zrozumieć projekt i jego funkcje.

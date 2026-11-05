@@ -1,1 +1,7 @@
-Baza danych to uporządkowany system przechowywania, zarządzania i szybkiego wyszukiwania informacji niezbędnych do działania aplikacji. Pozwala ona na trwałe zapisywanie danych, takich jak profile użytkowników, zamówienia czy treści, zapewniając do nich bezpieczny i kontrolowany dostęp. Najpopularniejsze jej rodzaje to relacyjne (np. PostgreSQL, MySQL) oraz nierelacyjne, czyli NoSQL (np. MongoDB, Redis).n
+# Database
+ 
+Folder database zawiera pliki związane z bazą danych aplikacji.
+ 
+Przechowywane są tutaj skrypty SQL i struktura tabel.
+ 
+Baza danych służy do przechowywania informacji o użytkownikach i zadaniach.
