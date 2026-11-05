@@ -67,3 +67,14 @@ Każda tabela posiada klucz główny (PK). Tabele są połączone za pomocą klu
 ## Podsumowanie
 
 W tej części zadania przygotowano opis danych aplikacji TaskBoard oraz wstępny diagram ERD. Diagram przedstawia podstawowe tabele i relacje między nimi.
+
+## Część 2 – Struktura danych
+
+1. Pobranie najnowszej wersji main i utworzenie brancha feature/tb-1-dane.
+2. Skopiowanie szablonu do docs/dane.md.
+3. Opisanie użytkownika, tablicy i zadania wraz z przykładami danych.
+4. Przygotowanie przykładu zadania w formacie JSON.
+5. Utworzenie wstępnego diagramu ERD w Mermaid.
+6. Usunięcie komentarzy pomocniczych z szablonu.
+7. Utworzenie commitów i pull requesta do main.
+8. Sprawdzenie workflow i scalenie przez merge commit.
