@@ -18,7 +18,7 @@ Pomaga użytkownikom planować codzienną pracę.
  
 - Visual Studio Code
 - Git
-- Przeglądarka internetowa
+- Przeglądarka intenetowa
 - XAMPP
  
 ## Uruchomienie
