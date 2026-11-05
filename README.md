@@ -1,29 +1,37 @@
 # TaskBoard
 
-<!-- To jest szkielet README. W zadaniu TB-1 uzupełnij każdą sekcję i usuń te komentarze. -->
-
-Krótki opis aplikacji (2–3 zdania): czym jest TaskBoard i co można w nim zrobić.
+TaskBoard to aplikacja internetowa służąca do zarządzania zadaniami. Umożliwia dodawanie, przeglądanie i organizowanie zadań w jednym miejscu.
 
 ## Technologie
 
-<!-- Wypisz technologie użyte w projekcie (frontend, backend, baza danych, narzędzia). -->
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** PHP
+- **Baza danych:** MySQL
+- **Narzędzia:** Visual Studio Code, Git, GitHub, XAMPP
 
 ## Wymagane środowisko
 
-<!-- Narzędzia i ich wersje potrzebne do uruchomienia projektu. -->
+- Windows 11
+- Visual Studio Code
+- Git
+- XAMPP
+- Przeglądarka internetowa
 
 ## Uruchomienie
 
-<!-- Instrukcja krok po kroku. Na razie szkic – rozbudujesz ją w kolejnych tygodniach. -->
+1. Sklonuj repozytorium na komputer.
+2. Umieść folder projektu w katalogu htdocs programu XAMPP.
+3. Uruchom Apache i MySQL w XAMPP.
+4. Otwórz projekt w przeglądarce internetowej.
 
 ## Struktura projektu
 
 | Folder | Za co odpowiada |
 | --- | --- |
-| `frontend/` | |
-| `backend/` | |
-| `database/` | |
-| `docs/` | |
+| frontend/ | Zawiera pliki odpowiedzialne za wygląd i interfejs użytkownika. |
+| backend/ | Zawiera kod odpowiedzialny za działanie aplikacji. |
+| database/ | Zawiera pliki i strukturę bazy danych. |
+| docs/ | Zawiera dokumentację projektu i zadania. |
 
 ## Materiały
 
@@ -31,4 +39,4 @@ Pliki potrzebne podczas praktyk są w folderze [materialy](materialy/README.md).
 
 ## Autor
 
-Imię i nazwisko, klasa.
+Maksym Shuliak 3TP
