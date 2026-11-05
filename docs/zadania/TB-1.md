@@ -66,4 +66,4 @@ Każda tabela posiada klucz główny (PK). Tabele są połączone za pomocą klu
  
 ## Podsumowanie
  
-W tej części zadania przygotowano opis danych aplikacji TaskBoard oraz wstępny diagram ERD. Diagram przedstawia podstawowe tabele i relacje między nimi.
+W tej części zadania przygotowano opis danych aplikacji TaskBoard oraz wstępny diagram ERD. Diagram przedstawia podstawowe tabele i relacje między nimi.n

@@ -1,2 +1,1 @@
-# zadania
-folder dla opisow zadan projektu.
+folder dla opisow zadan projektu.n

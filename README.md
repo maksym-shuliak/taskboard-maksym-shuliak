@@ -43,6 +43,4 @@ Pliki potrzebne podczas praktyk są w folderze [materialy](materialy/README.md).
  
 ## Autor
  
-Maksym Shuliak, 3TP.
-
- 
+Maksym Shuliak, 3TP.n
