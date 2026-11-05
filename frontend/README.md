@@ -1,7 +1,4 @@
 # Frontend
- 
-Folder frontend zawiera interfejs użytkownika aplikacji TaskBoard.
- 
-Tutaj znajdują się pliki odpowiedzialne za wygląd aplikacji.
- 
-Użytkownik może tutaj przeglądać i zarządzać zadaniami.
+
+Folder zawiera część aplikacji odpowiedzialną za interfejs użytkownika.
+Znajdują się tutaj pliki odpowiedzialne za wygląd i działanie strony.
