@@ -39,8 +39,10 @@ Instrukcja uruchomienia zostanie uzupełniona w kolejnych etapach.
 ## Materiały
  
 Pliki potrzebne podczas praktyk są w folderze [materialy](materialy/README.md).
+
  
 ## Autor
  
 Maksym Shuliak, 3TP.
+
  
