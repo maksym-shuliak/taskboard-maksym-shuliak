@@ -1,19 +1,19 @@
 # TB-2, częsc 1:Tabela zadan, zapytania i kopia zapasowa
- 
+
 ## cel
- 
+
 Na wzór tabel users i boards z zajęćć dopisujesz najważniejszą tabelę aplikacji, tasks , i ćwiczysz
 zapytania na zadaniach. Wszystko, czego potrzebujesz, było pokazane na zajęciach na tablicach.
- 
+
 ## Plan dni
- 
+
 Poniedziałki są stacjonarne, pozostałe dni pracujesz zdalnie według planu:
 -Wtorek: tabela tasks w skrypcie bazy i 10 zadańń testowych;    ćwiczenie z debuggerem bugs.
 -Środa: 10 zapytańń w queries.sql oraz kopia zapasowa i sprawdzenie jej odtworzenia. W śśr
 Teams pojawi się częśc 2.
- 
+
 ## Co zrobic
- 
+
 1. Pobierz najnowszą wersję main ( git switch main , git pull ) i utwórz branch feature/tb-2-
 baza .
 2. W database/taskboard.sql dopisz tabelę tasks według diagramu materialy/erd.md : typy pól,
@@ -40,14 +40,14 @@ taskboard_test i porównaj liczbę rekordów. Wynik zapisz w README.
 komentarz, co było nie tak. Po poprawkach strona pokazuje „Wykonane: 2 z 5 (40%)”.
 18. Wklej treść tego zadania do docs/zadania/TB-2.md , potem pull request, zielony workflow i
 scalenie przez merge commit.
- 
+
 ## Gotowe gdy
- 
+
 -Skrypt odtwarza bazę bez błędów na czystym MySQL.
 -Tabela tasks ma klucze obce, dozwolone wartośś ci i pola soft delet
 -Wszystkie 10 zapytańń działa i ma komentarz
 -Kopia zapasowa jest w database/backup/ , a wynik jej sprawdzenia w README.
 -bugs.js działa i ma 5 poprawek opisanych komentarzami.
 -Pull request z branchu feature/tb-2-baza ma zielony workflow i jest scalony do piątku 18:00.
- 
+
 ---
