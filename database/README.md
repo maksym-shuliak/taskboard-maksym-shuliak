@@ -22,3 +22,4 @@ Porównanie liczby rekordów:
 
 Wynik: przywracanie kopii zapasowej zakończyło się
 pomyślnie. Liczba rekordów jest zgodna.
+
