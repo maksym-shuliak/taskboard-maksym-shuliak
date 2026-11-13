@@ -51,3 +51,52 @@ scalenie przez merge commit.
 -Pull request z branchu feature/tb-2-baza ma zielony workflow i jest scalony do piątku 18:00.
 
 ---
+
+## TB-2, część 2: API zadań
+
+### Cel
+
+Rozbudowa backendu o obsługę zadań i listę użytkowników.
+API umożliwia pobieranie, dodawanie, edycję oraz
+logiczne usuwanie zadań.
+
+### Co zrobić
+
+1. Pobrać najnowszą wersję `main` i utworzyć
+   branch `feature/tb-2-api`.
+2. Utworzyć plik `backend/routes/tasks.js`.
+3. Dodać trasy API:
+   - `GET /api/boards/:boardId/tasks` – lista zadań tablicy.
+   - `GET /api/tasks/:id` – szczegóły zadania.
+   - `POST /api/tasks` – dodawanie zadania.
+   - `PUT /api/tasks/:id` – edycja zadania.
+   - `DELETE /api/tasks/:id` – soft delete zadania.
+4. Utworzyć plik `backend/routes/users.js` i dodać
+   `GET /api/users` bez pola `passwordHash`.
+5. Podłączyć nowe trasy w `backend/server.js`.
+6. Dodać walidację danych:
+   - Tytuł musi mieć od 3 do 100 znaków.
+   - Status: `todo`, `in_progress` lub `done`.
+   - Priorytet: `low`, `medium` lub `high`.
+   - Termin musi być poprawną datą lub pusty.
+   - Tablica musi istnieć i nie może być usunięta.
+   - Przypisany użytkownik musi istnieć lub być pusty.
+7. Stosować odpowiednie kody odpowiedzi HTTP:
+   `200`, `201`, `204`, `400` i `404`.
+8. Przetestować API w programie Postman.
+9. Wyeksportować kolekcję do folderu `docs/postman/`.
+10. Uzupełnić README o informacje dotyczące bazy danych
+    i dostępnych endpointów API.
+11. Utworzyć pull request do `main`, sprawdzić workflow
+    i scalić zmiany przez merge commit.
+
+### Gotowe, gdy
+
+- Wszystkie endpointy działają poprawnie.
+- Walidacja odrzuca nieprawidłowe dane kodem `400`.
+- Nieistniejące zadania zwracają kod `404`.
+- Soft delete ustawia `isDeleted = 1`.
+- Lista użytkowników nie zawiera `passwordHash`.
+- Kolekcja Postman znajduje się w `docs/postman/`.
+- README zawiera informacje o bazie danych i API.
+- Pull request ma zielony workflow i został scalony.
