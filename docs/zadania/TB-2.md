@@ -100,6 +100,3 @@ logiczne usuwanie zadań.
 - Kolekcja Postman znajduje się w `docs/postman/`.
 - README zawiera informacje o bazie danych i API.
 - Pull request ma zielony workflow i został scalony.
-
-
-
