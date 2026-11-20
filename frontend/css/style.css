@@ -1,0 +1,124 @@
+/* Własne kolory i czcionka – uzupełniają Bootstrapa */
+body { background-color: #F3F5F7; }
+.btn-primary { --bs-btn-bg: #0F766E; --bs-btn-border-color: #0F766E; --bs-btn-hover-bg: #0B5E58; --bs-btn-hover-border-color: #0B5E58; }
+ 
+ 
+/* Kolumny zadań */
+#col-todo,
+#col-in_progress,
+#col-done {
+  padding: 12px;
+  border-radius: 12px;
+  min-height: 350px;
+  align-content: start;
+}
+ 
+/* Kolumna Do zrobienia */
+#col-todo {
+  background-color: #e8eef7;
+}
+ 
+/* Kolumna W trakcie */
+#col-in_progress {
+  background-color: #fff2dc;
+}
+ 
+/* Kolumna Gotowe */
+#col-done {
+  background-color: #e2f3e9;
+}
+ 
+/* Wygląd kart zadań */
+#col-todo .card,
+#col-in_progress .card,
+#col-done .card {
+  border-radius: 8px;
+  border-left: 4px solid #94a3b8;
+  transition: box-shadow 0.2s ease;
+}
+ 
+#col-todo .card:hover,
+#col-in_progress .card:hover,
+#col-done .card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12) !important;
+}
+ 
+/* Kolory priorytetów */
+.card.priority-high {
+  border-left-color: #dc3545 !important;
+}
+ 
+.card.priority-medium {
+  border-left-color: #d99522 !important;
+}
+ 
+.card.priority-low {
+  border-left-color: #94a3b8 !important;
+}
+ 
+ 
+/* Wygląd kolumn zadań */
+.task-column {
+  padding: 14px;
+  border-radius: 12px;
+  min-height: 400px;
+  height: 100%;
+}
+ 
+/* Kolory kolumn */
+.task-column-todo {
+  background-color: #e8eef7;
+}
+ 
+.task-column-progress {
+  background-color: #fff2dc;
+}
+ 
+.task-column-done {
+  background-color: #e2f3e9;
+}
+ 
+/* Nagłówki kolumn */
+.task-column h2 {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+ 
+/* Karty zadań */
+.task-column .card {
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+ 
+ 
+/* Poprawa kontrastu dla dostępności */
+ 
+/* Linki */
+a {
+  color: #0645ad;
+}
+ 
+/* Opis tablicy */
+#boardDescription {
+  color: #495057 !important;
+}
+ 
+/* Przycisk czyszczenia filtrów */
+#clearFiltersBtn {
+  color: #495057;
+  border-color: #495057;
+}
+ 
+/* Przyciski szczegółów zadania */
+.btn-outline-info {
+  color: #075b69;
+  border-color: #075b69;
+}
+ 
+.btn-outline-info:hover,
+.btn-outline-info:focus-visible {
+  color: #ffffff;
+  background-color: #075b69;
+  border-color: #075b69;
+}
+ 

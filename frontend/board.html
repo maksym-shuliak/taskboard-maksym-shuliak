@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tablica – TaskBoard</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Pasek nawigacyjny -->
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="boards.html">TaskBoard</a>
+ 
+      <div class="d-flex align-items-center gap-3">
+        <a href="boards.html" class="text-white text-decoration-none">
+          Moje tablice
+        </a>
+ 
+        <span class="text-white" id="userName"></span>
+ 
+        <button type="button" class="btn btn-outline-light btn-sm" id="logoutBtn">
+          Wyloguj
+        </button>
+      </div>
+    </div>
+  </nav>
+ 
+  <main class="container py-4">
+ 
+    <!-- Filtrowanie i dodawanie zadań -->
+   
+<!-- Informacje o tablicy -->
+<div class="mb-3">
+  <nav aria-label="Ścieżka nawigacji">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="boards.html">Tablice</a>
+      </li>
+      <li class="breadcrumb-item active" id="boardBreadcrumb">
+        Tablica
+      </li>
+    </ol>
+  </nav>
+ 
+  <div class="d-flex justify-content-between align-items-center gap-3">
+    <div>
+      <h1 class="h3 mb-1" id="boardTitle">Tablica</h1>
+      <p class="text-secondary mb-0" id="boardDescription"></p>
+    </div>
+ 
+    <button type="button" class="btn btn-primary" id="newTaskBtn">
+      Dodaj zadanie
+    </button>
+  </div>
+</div>
+ 
+<!-- Filtrowanie zadań -->
+<div class="row g-2 mb-3">
+  <div class="col-12 col-md-3">
+    <label for="filterPriority" class="form-label">Priorytet</label>
+    <select class="form-select" id="filterPriority">
+      <option value="">Wszystkie</option>
+      <option value="high">Wysoki</option>
+      <option value="medium">Średni</option>
+      <option value="low">Niski</option>
+    </select>
+  </div>
+ 
+  <div class="col-12 col-md-3">
+    <label for="filterAssignee" class="form-label">Osoba</label>
+    <select class="form-select" id="filterAssignee">
+      <option value="">Wszyscy</option>
+    </select>
+  </div>
+ 
+  <div class="col-12 col-md-4">
+    <label for="filterSearch" class="form-label">Szukaj w tytułach</label>
+    <input type="search" class="form-control" id="filterSearch"
+           placeholder="np. README">
+  </div>
+ 
+  <div class="col-12 col-md-2 d-flex align-items-end">
+    <button type="button" class="btn btn-outline-secondary w-100"
+            id="clearFiltersBtn">
+      Wyczyść filtry
+    </button>
+  </div>
+</div>
+ 
+   
+<!-- Kolumny zadań -->
+<div class="row g-3">
+ 
+  <!-- Kolumna Do zrobienia -->
+  <section class="col-12 col-lg-4">
+    <div class="task-column task-column-todo">
+      <h2 class="h5 d-flex justify-content-between align-items-center">
+        Do zrobienia
+        <span class="badge text-bg-light" id="count-todo">0</span>
+      </h2>
+ 
+      <div class="d-grid gap-2" id="col-todo"></div>
+    </div>
+  </section>
+ 
+  <!-- Kolumna W trakcie -->
+  <section class="col-12 col-lg-4">
+    <div class="task-column task-column-progress">
+      <h2 class="h5 d-flex justify-content-between align-items-center">
+        W trakcie
+        <span class="badge text-bg-light" id="count-in_progress">0</span>
+      </h2>
+ 
+      <div class="d-grid gap-2" id="col-in_progress"></div>
+    </div>
+  </section>
+ 
+  <!-- Kolumna Gotowe -->
+  <section class="col-12 col-lg-4">
+    <div class="task-column task-column-done">
+      <h2 class="h5 d-flex justify-content-between align-items-center">
+        Gotowe
+        <span class="badge text-bg-light" id="count-done">0</span>
+      </h2>
+ 
+      <div class="d-grid gap-2" id="col-done"></div>
+    </div>
+  </section>
+ 
+</div>
+</main>
+ 
+ 
+  <!-- Formularz dodawania i edycji zadania -->
+  <div class="modal fade" id="taskModal" tabindex="-1"
+     role="dialog"
+     aria-labelledby="taskModalTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <form class="modal-content" id="taskForm" novalidate>
+ 
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="taskModalTitle">
+            Nowe zadanie
+          </h2>
+          <button type="button" class="btn-close"
+                  data-bs-dismiss="modal" aria-label="Zamknij"></button>
+        </div>
+ 
+        <div class="modal-body">
+ 
+          <!-- Tytuł zadania -->
+          <label for="taskTitle" class="form-label">Tytuł</label>
+          <input type="text" class="form-control" id="taskTitle"
+                 minlength="3" maxlength="100" required>
+          <div class="invalid-feedback">
+            Tytuł musi mieć od 3 do 100 znaków.
+          </div>
+ 
+          <!-- Priorytet zadania -->
+          <label for="taskPriority" class="form-label mt-3">
+            Priorytet
+          </label>
+          <select class="form-select" id="taskPriority">
+            <option value="high">Wysoki</option>
+            <option value="medium" selected>Średni</option>
+            <option value="low">Niski</option>
+          </select>
+ 
+          <!-- Opis zadania -->
+          <label for="taskDescription" class="form-label mt-3">
+            Opis
+          </label>
+          <textarea class="form-control" id="taskDescription"
+                    rows="3"></textarea>
+ 
+          <!-- Status zadania -->
+          <label for="taskStatus" class="form-label mt-3">
+            Status
+          </label>
+          <select class="form-select" id="taskStatus">
+            <option value="todo">Do zrobienia</option>
+            <option value="in_progress">W trakcie</option>
+            <option value="done">Gotowe</option>
+          </select>
+ 
+          <!-- Termin wykonania -->
+          <label for="taskDeadline" class="form-label mt-3">
+            Termin
+          </label>
+          <input type="date" class="form-control" id="taskDeadline">
+ 
+          <!-- Osoba przypisana do zadania -->
+          <label for="taskAssignee" class="form-label mt-3">
+            Przypisana osoba
+          </label>
+          <select class="form-select" id="taskAssignee">
+            <option value="">Nieprzypisane</option>
+          </select>
+ 
+        </div>
+ 
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary"
+                  data-bs-dismiss="modal">
+            Anuluj
+          </button>
+          <button type="submit" class="btn btn-primary">
+            Zapisz
+          </button>
+        </div>
+ 
+      </form>
+    </div>
+  </div>
+ 
+  <!-- Okno ze szczegółami zadania -->
+   <div class="modal fade" id="taskDetailsModal" tabindex="-1"
+     role="dialog"
+     aria-labelledby="taskDetailsModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+ 
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="taskDetailsModalTitle">
+            Szczegóły zadania
+          </h2>
+          <button type="button" class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Zamknij"></button>
+        </div>
+ 
+        <!-- Informacje o wybranym zadaniu -->
+        <div class="modal-body" id="taskDetailsContent"></div>
+ 
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary"
+                  data-bs-dismiss="modal">
+            Zamknij
+          </button>
+        </div>
+ 
+      </div>
+    </div>
+  </div>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/board.js"></script>
+ 
+  <!-- Wylogowanie użytkownika -->
+  <script>
+    document.getElementById('logoutBtn').addEventListener('click', async () => {
+      try {
+        const response = await fetch('/api/auth/logout', {
+          method: 'POST'
+        });
+ 
+        if (!response.ok) {
+          throw new Error('Nie udało się wylogować.');
+        }
+ 
+        window.location.href = 'login.html';
+      } catch (error) {
+        alert(error.message);
+      }
+    });
+  </script>
+ 
+</body>
+</html>
